@@ -167,6 +167,10 @@
         #define SET_TP4  gpio_write_bit( GPIOB,15, HIGH );
         #define CLR_TP4  gpio_write_bit( GPIOB,15, LOW );
     #elif defined(ESP8266)
+        #define D5 14
+        #define D6 12
+        #define D7 13
+        #define D8 15
         #define MODE_TP1 pinMode( D5,OUTPUT ) ; // GPIO 14
         #define SET_TP1  GPOS = (1 << D5);
         #define CLR_TP1  GPOC = (1 << D5);
